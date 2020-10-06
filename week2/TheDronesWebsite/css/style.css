@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rebeccapurple;
+}
+
+img {
+  width: 70%;
+  margin: auto;
+  display: block;
+}
+
+header {
+  background-color: rosybrown;
+}
+
+main {
+  background-color: royalblue;
+}
+
+header,
+main {
+  margin: auto;
+  width: 85%;
+}
+
+#grid-floats {
+  background-color: salmon;
+  text-align: center;
+}
+
+#grid-floats li {
+  list-style: none;
+  width: 30%;
+  height: 300px;
+  display: inline-block;
+  overflow: hidden;
+}
+
+#grid-floats li:first-child {
+  width: 60%;
+}
+.fix {
+  clear: both;
+}
+
+#grid-flex {
+  background-color: sandybrown;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+#grid-flex li {
+  flex-basis: 33%;
+  list-style: none;
+}
+#grid-flex li:first-child {
+  flex: 66%;
+}
+
+.grid-item {
+}
