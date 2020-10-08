@@ -6,6 +6,7 @@
 
 body {
   background-color: rebeccapurple;
+  font-size: 18px;
 }
 
 img {
@@ -16,6 +17,9 @@ img {
 
 header {
   background-color: rosybrown;
+  text-align: center;
+  padding: 20px;
+  font-size: 2rem;
 }
 
 main {
