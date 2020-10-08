@@ -51,12 +51,14 @@ main {
   overflow: auto;
 }
 
-.clearfix {
-  clear: both;
-}
-
 #grid-floats li:first-child {
   width: 50%;
+}
+
+#grid-floats::after {
+  content: '';
+  display: table;
+  clear: both;
 }
 
 #grid-flex {
