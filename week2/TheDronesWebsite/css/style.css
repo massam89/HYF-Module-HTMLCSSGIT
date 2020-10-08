@@ -10,7 +10,7 @@ body {
 }
 
 img {
-  width: 70%;
+  width: 60%;
   margin: auto;
   display: block;
 }
@@ -18,7 +18,6 @@ img {
 header {
   background-color: rosybrown;
   text-align: center;
-  padding: 20px;
   font-size: 2rem;
 }
 
@@ -34,7 +33,6 @@ main {
 
 #grid-floats {
   background-color: salmon;
-  text-align: center;
 }
 
 #grid-floats p {
@@ -47,17 +45,14 @@ main {
 
 #grid-floats li {
   list-style: none;
-  width: 30%;
-  height: 400px;
+  width: 24.4%;
+  height: 350px;
   display: inline-block;
-  overflow: hidden;
+  overflow: auto;
 }
 
 #grid-floats li:first-child {
-  width: 60%;
-}
-.fix {
-  clear: both;
+  width: 50%;
 }
 
 #grid-flex {
@@ -68,11 +63,11 @@ main {
 }
 
 #grid-flex li {
-  flex-basis: 33%;
+  flex-basis: 25%;
   list-style: none;
 }
 #grid-flex li:first-child {
-  flex: 66%;
+  flex: 50%;
 }
 
 .grid-item {
