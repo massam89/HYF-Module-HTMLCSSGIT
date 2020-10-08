@@ -1,12 +1,44 @@
+/* universal */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* general */
+
 body {
-  background-color: rebeccapurple;
+  background-color: #edc988;
   font-size: 18px;
+  font-family: 'Sansita Swashed', cursive;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Open Sans Condensed', sans-serif;
+  text-align: center;
+}
+
+h1 {
+  letter-spacing: 130px;
+  font-weight: 900;
+  padding: 0 0 0 120px;
+  font-size: 7rem;
+  color: white;
+}
+
+h2 {
+  letter-spacing: 20px;
+  font-weight: 900;
+  padding: 15px 0px 15px 0px;
+  font-size: 2.5rem;
+  color: white;
+}
+
+p {
+  text-align: justify !important;
 }
 
 img {
@@ -16,23 +48,21 @@ img {
 }
 
 header {
-  background-color: rosybrown;
+  background-color: #d7385e;
   text-align: center;
   font-size: 2rem;
+  border-bottom: white 3px dashed;
 }
 
 main {
-  background-color: royalblue;
-}
-
-header,
-main {
+  background-color: #132743;
   margin: auto;
-  width: 85%;
+  width: 1024px;
 }
+
+/* style float part */
 
 #grid-floats {
-  background-color: salmon;
 }
 
 #grid-floats p {
@@ -45,14 +75,14 @@ main {
 
 #grid-floats li {
   list-style: none;
-  width: 25%;
-  height: 350px;
+  width: 217px;
+  height: 391px;
   float: left;
   overflow: auto;
 }
 
 #grid-floats li:first-child {
-  width: 50%;
+  width: 444px;
 }
 
 #grid-floats::after {
@@ -61,20 +91,52 @@ main {
   clear: both;
 }
 
+#grid-floats li:nth-child(2) {
+  font-family: 'Tajawal', sans-serif;
+  font-size: 1rem;
+}
+
+/* style grid part */
+
 #grid-flex {
-  background-color: sandybrown;
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
 }
 
 #grid-flex li {
-  flex-basis: 25%;
+  flex-basis: 217px;
   list-style: none;
 }
 #grid-flex li:first-child {
-  flex: 50%;
+  flex: 400px;
+}
+
+#grid-flex li:nth-child(2) {
+  font-family: 'Tajawal', sans-serif;
+  font-size: 1rem;
+}
+
+/* style both grid and float part */
+
+#grid-floats,
+#grid-flex {
+  padding: 20px;
+  width: 950px;
+  margin: auto;
+  background-color: white;
 }
 
 .grid-item {
+  border: 1px solid #132743;
+  border-radius: 10px;
+  margin: 5px;
+  padding: 10px;
+  transition: transform 0.5s ease;
+}
+
+.grid-item:hover {
+  color: #d7385e;
+  background-color: #f8efd4;
+  border: 1px red solid;
+  transform: scale(1.1, 1.1);
 }
