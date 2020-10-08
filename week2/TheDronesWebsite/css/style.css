@@ -45,10 +45,14 @@ main {
 
 #grid-floats li {
   list-style: none;
-  width: 24.4%;
+  width: 25%;
   height: 350px;
-  display: inline-block;
+  float: left;
   overflow: auto;
+}
+
+.clearfix {
+  clear: both;
 }
 
 #grid-floats li:first-child {
