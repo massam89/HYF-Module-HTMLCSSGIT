@@ -173,17 +173,17 @@ main {
 
   #grid-floats li {
     width: 31%;
-    height: 440px;
+    height: 330px;
   }
 
   #grid-floats li:first-child {
-    width: 100%;
-    height: auto;
+    width: 47%;
+    height: 300px;
   }
 
   #grid-floats li:nth-child(2) {
-    width: 100%;
-    height: auto;
+    width: 47%;
+    height: 300px;
   }
 
   /* style grid part */
@@ -192,11 +192,11 @@ main {
     flex-basis: 31%;
   }
   #grid-flex li:first-child {
-    flex: 100%;
+    flex: 45%;
   }
 
   #grid-flex li:nth-child(2) {
-    flex: 100%;
+    flex: 45%;
   }
 
   /* style both grid and float part */
