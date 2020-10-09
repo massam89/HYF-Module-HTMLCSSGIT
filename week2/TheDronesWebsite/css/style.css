@@ -59,6 +59,10 @@ main {
   width: 1024px;
 }
 
+ul {
+  border-radius: 10px;
+}
+
 /* style float part */
 
 #grid-floats {
@@ -147,7 +151,6 @@ main {
 
   h1 {
     letter-spacing: 72px;
-    font-weight: 900;
     padding: 0 0 0 42px;
     font-size: 7rem;
     color: white;
@@ -155,7 +158,6 @@ main {
 
   h2 {
     letter-spacing: 20px;
-    font-weight: 900;
     padding: 15px 0px 15px 0px;
     font-size: 2.5rem;
     color: white;
@@ -197,6 +199,73 @@ main {
 
   #grid-flex li:nth-child(2) {
     flex: 45%;
+  }
+
+  /* style both grid and float part */
+
+  #grid-floats,
+  #grid-flex {
+    width: 90%;
+  }
+
+  .grid-item p {
+    font-size: 0.8rem;
+  }
+
+  .grid-item h3 {
+    font-size: 1rem;
+  }
+
+  .grid-item {
+    transition: none;
+  }
+
+  .grid-item:hover {
+    transform: none;
+  }
+}
+
+/* mobile view */
+
+@media only screen and (max-width: 600px) {
+  /* general */
+
+  h1 {
+    letter-spacing: 42px;
+    padding: 0 0 0 32px;
+    font-size: 12vw;
+    color: white;
+  }
+
+  h2 {
+    letter-spacing: 10px;
+    font-size: 1.8rem;
+  }
+
+  img {
+    width: 80%;
+  }
+
+  main {
+    width: 90%;
+  }
+
+  /* style float part */
+
+  #grid-floats li {
+    width: 95%;
+    height: auto;
+    float: none;
+  }
+
+  #grid-floats li:first-child {
+    width: 95%;
+  }
+
+  /* style grid part */
+
+  #grid-flex li {
+    flex: 100%;
   }
 
   /* style both grid and float part */
