@@ -50,7 +50,6 @@ img {
 header {
   background-color: #d7385e;
   text-align: center;
-  font-size: 2rem;
   border-bottom: white 3px dashed;
 }
 
@@ -131,7 +130,7 @@ main {
   border-radius: 10px;
   margin: 5px;
   padding: 10px;
-  transition: transform 0.5s ease;
+  transition: transform 0.2s ease;
 }
 
 .grid-item:hover {
@@ -139,4 +138,87 @@ main {
   background-color: #f8efd4;
   border: 1px red solid;
   transform: scale(1.1, 1.1);
+}
+
+/* tablet style */
+
+@media only screen and (min-width: 600px) and (max-width: 1023px) {
+  /* general */
+
+  h1 {
+    letter-spacing: 72px;
+    font-weight: 900;
+    padding: 0 0 0 42px;
+    font-size: 7rem;
+    color: white;
+  }
+
+  h2 {
+    letter-spacing: 20px;
+    font-weight: 900;
+    padding: 15px 0px 15px 0px;
+    font-size: 2.5rem;
+    color: white;
+  }
+
+  img {
+    width: 60%;
+  }
+
+  main {
+    width: 90%;
+  }
+
+  /* style float part */
+
+  #grid-floats li {
+    width: 31%;
+    height: 440px;
+  }
+
+  #grid-floats li:first-child {
+    width: 100%;
+    height: auto;
+  }
+
+  #grid-floats li:nth-child(2) {
+    width: 100%;
+    height: auto;
+  }
+
+  /* style grid part */
+
+  #grid-flex li {
+    flex-basis: 31%;
+  }
+  #grid-flex li:first-child {
+    flex: 100%;
+  }
+
+  #grid-flex li:nth-child(2) {
+    flex: 100%;
+  }
+
+  /* style both grid and float part */
+
+  #grid-floats,
+  #grid-flex {
+    width: 90%;
+  }
+
+  .grid-item p {
+    font-size: 0.8rem;
+  }
+
+  .grid-item h3 {
+    font-size: 1rem;
+  }
+
+  .grid-item {
+    transition: none;
+  }
+
+  .grid-item:hover {
+    transform: none;
+  }
 }
